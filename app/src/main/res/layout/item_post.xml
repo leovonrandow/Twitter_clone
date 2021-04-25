@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <View
+        android:id="@+id/spacing"
+        android:layout_width="wrap_content"
+        android:layout_height="10.5dp"
+        />
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:src="@drawable/tobias_profile_pic"
+        android:background="@drawable/redondo"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        />
+
+    <LinearLayout
+        android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+        android:layout_marginRight="16dp"
+    android:orientation="vertical"
+    android:layout_toRightOf="@+id/avatar"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/color_name"
+            android:textStyle="bold"
+            android:layout_marginRight="6dp"
+            />
+
+        <TextView
+            android:id="@+id/nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/bluey_gray"
+            android:layout_marginRight="22dp"
+            />
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textColor="@color/bluey_gray"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textColor="@color/color_name"
+        android:paddingTop="5dp"/>
+
+    <ImageView
+        android:id="@+id/imagem"
+        android:src="@drawable/tobias_tweet_image"
+        android:layout_width="272dp"
+        android:layout_height="135dp"
+        android:layout_marginTop="9dp"
+        android:scaleType="centerCrop"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/retweet"
+            android:src="@drawable/reply"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+        <ImageButton
+            android:id="@+id/reply"
+            android:src="@drawable/retweet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="10dp"/>
+
+        <ImageButton
+            android:id="@+id/like"
+            android:src="@drawable/like"
+            android:layout_width="40dp"
+            android:layout_height="40dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_below="@+id/container"
+        android:background="@color/line"/>
+
+</RelativeLayout>
